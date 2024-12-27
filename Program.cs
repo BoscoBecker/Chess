@@ -1,3 +1,9 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using Chess.chessboard;
 
-Console.WriteLine("Hello, World!");
+namespace Chess {
+    internal abstract class Program {
+        private static void Main() {
+            var position = new Position(3, 4);
+        }
+    }
+}
