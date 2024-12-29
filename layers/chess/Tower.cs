@@ -1,6 +1,9 @@
-using Chess.chessboard;
 
-namespace Chess.layers;
+using Chess.layers.chessboard;
+using Chess.Enums;
+
+
+namespace Chess.layers.chess;
 
 public class Tower : Piece{
     public Tower(Chessboard chessboard, Color color) : base(chessboard, color) {

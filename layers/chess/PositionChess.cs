@@ -1,6 +1,6 @@
-using Chess.chessboard;
+using Chess.layers.chessboard;
 
-namespace Chess.layers;
+namespace Chess.layers.chess;
 
 public class PositionChess(char column, int line){
     private char column{ get; set; } = column; 

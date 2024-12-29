@@ -1,4 +1,5 @@
-namespace Chess.chessboard;
+
+namespace Chess.layers.chessboard;
 
 public class Position(int line, int column) {
     public int line { get; set; } = line;

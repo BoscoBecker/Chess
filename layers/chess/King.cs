@@ -1,6 +1,7 @@
-using Chess.chessboard;
+using Chess.layers.chessboard;
+using Chess.Enums;
 
-namespace Chess.layers;
+namespace Chess.layers.chess;
 
 public class King : Piece{
     public King(Chessboard chessboard, Color color) : base(chessboard, color) {
