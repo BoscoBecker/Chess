@@ -1,5 +1,3 @@
-using chessboard;
-
 namespace Chess.chessboard;
 
 public class Piece(Chessboard chessboard, Color color) {

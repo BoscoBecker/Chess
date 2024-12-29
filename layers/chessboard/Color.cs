@@ -1,4 +1,4 @@
-namespace chessboard;
+namespace Chess.chessboard;
 
 public enum Color {
     black,

@@ -1,7 +1,6 @@
 ﻿using Chess.chessboard;
 using Chess.layers;
 using Chess.layers.chessboard;
-using chessboard;
 
 namespace Chess {
     internal abstract class Program {
