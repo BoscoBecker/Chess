@@ -13,7 +13,6 @@ namespace Chess {
                 chessboard.putPiece(new King(chessboard,Color.black), 
                                     new Position(1,3));
                 Screen.PrintChessBoard(chessboard);
-
             }
             catch (ChessboardException e){
                 Console.WriteLine(e.Message);
