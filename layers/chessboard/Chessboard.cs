@@ -2,27 +2,31 @@
 namespace Chess.layers.chessboard;
 
 public class Chessboard(int lines, int columns) {
-    public int lines { get; set; } = lines;
+    public int Lines { get; set; } = lines;
     public int Columns { get; set; } = columns;
     private Piece[,] pieces = new Piece[lines, columns];
-    public Piece piece(int line, int column) => pieces[line, column];
-    public Piece piece(Position position) => pieces[position.line, position.column];
+    public Piece Piece(int line, int column) => pieces[line, column];
+    private Piece Piece(Position position) => pieces[position.line, position.column];
 
-    private bool piecesExists(Position position) { 
-        validatePosition(position);
-        return piece(position) != null;
+    private bool PiecesExists(Position position) { 
+        ValidatePosition(position);
+        return Piece(position) is not null;
     }
-
-    public void putPiece(Piece piece, Position position) {
-        if (piecesExists(position)) throw new ChessboardException("There is already a piece in this position!");
+    public void PutPiece(Piece piece, Position position) {
+        if (PiecesExists(position)) throw new ChessboardException("There is already a piece in this position!");
         pieces[position.line, position.column] = piece;
         piece.Position = position;
     }
-
-    private bool isValidPosition(Position position) => position.line >= 0 && position.line < lines &&
-                                                       position.column >= 0 && position.column < columns;
-    private void validatePosition(Position position){
-        if (!isValidPosition(position)) throw new ChessboardException("Invalid position!");
+    public Piece RemovePiece(Position position){
+        if (Piece(position) is null) return null;
+        var currentPiece = Piece(position);
+        currentPiece.Position = null;
+        pieces[position.line, position.column] = null;
+        return currentPiece;
     }
-    
+    private bool IsValidPosition(Position position) => position.line >= 0 && position.line < lines &&
+                                                       position.column >= 0 && position.column < columns;
+    private void ValidatePosition(Position position){
+        if (!IsValidPosition(position)) throw new ChessboardException("Invalid position!");
+    }
 }

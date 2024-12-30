@@ -69,6 +69,15 @@ namespace Chess.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Language selected: {0}.
+        /// </summary>
+        internal static string LanguageSelected {
+            get {
+                return ResourceManager.GetString("LanguageSelected", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to T.
         /// </summary>
         internal static string Tower {

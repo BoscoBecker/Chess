@@ -17,4 +17,7 @@
     <data name="Tower" xml:space="preserve">
         <value>T</value>
     </data>
+    <data name="LanguageSelected" xml:space="preserve">
+        <value>Language selected: {0}</value>
+    </data>
 </root>

@@ -10,4 +10,5 @@ public class Piece(Chessboard chessboard, Color color) {
     public Chessboard Chessboard { get; protected set; } = chessboard;
     public override string ToString() =>  $"Position: {Position}, Color: {Color}, AmountOfMovements: {AmountOfMovements}";
     public bool IsNull() => this == null;
+    public void IncAmountOfMovements() => AmountOfMovements++;
 }

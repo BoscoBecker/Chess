@@ -4,13 +4,13 @@ using Chess.Enums;
 namespace Chess;
 public abstract class Screen {
     public static void PrintChessboard(Chessboard chessboard) {
-        for (var i = 0; i < chessboard.lines; i++) {
+        for (var i = 0; i < chessboard.Lines; i++) {
             Console.Write( 8 - i + " ");
             for (var j = 0; j < chessboard.Columns; j++){
-                if (chessboard.piece(i, j) is null)
+                if (chessboard.Piece(i, j) is null)
                     Console.Write("- ");
                 else
-                    PrintPiece(chessboard.piece(i,j));
+                    PrintPiece(chessboard.Piece(i,j));
             }
             Console.WriteLine();
         }
