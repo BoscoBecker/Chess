@@ -2,12 +2,12 @@
 namespace Chess.layers.chessboard;
 
 public class Chessboard(int lines, int columns) {
+    private Piece[,] pieces = new Piece[lines, columns];
+    private Piece Piece(Position position) => pieces[position.line, position.column];
     public int Lines { get; set; } = lines;
     public int Columns { get; set; } = columns;
-    private Piece[,] pieces = new Piece[lines, columns];
     public Piece Piece(int line, int column) => pieces[line, column];
-    private Piece Piece(Position position) => pieces[position.line, position.column];
-
+    
     private bool PiecesExists(Position position) { 
         ValidatePosition(position);
         return Piece(position) is not null;

@@ -78,6 +78,23 @@ namespace Chess.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to #===================== CHESS =====================#
+        ///
+        ///  #================= INSTRUCTIONS ==================#
+        ///
+        ///  # 1. Select the piece you want to move.
+        ///  # 2. Select the destination.
+        ///  # 3. If the move is valid, the piece will be moved.
+        ///
+        ///  #================= INSTRUCTIONS ==================#.
+        /// </summary>
+        internal static string ShowInfo {
+            get {
+                return ResourceManager.GetString("ShowInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to T.
         /// </summary>
         internal static string Tower {

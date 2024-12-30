@@ -20,4 +20,15 @@
     <data name="LanguageSelected" xml:space="preserve">
         <value>Linguagem selecionada: {0}</value>
     </data>
+    <data name="ShowInfo" xml:space="preserve">
+        <value>#===================== XADREZ =====================#
+
+#================== INSTRUÇÕES ====================#
+
+  # 1.Seleciona a peça que deseja mover.
+  # 2.Seleciona o destino.
+  # 3.Se o movimento for váldo a peça será movida.
+
+#=================== INSTRUÇÕES  ===================#</value>
+    </data>
 </root>
