@@ -1,5 +1,6 @@
 using Chess.layers.chessboard;
 using Chess.Enums;
+using Chess.layers.chess;
 
 namespace Chess;
 public abstract class Screen {
@@ -15,6 +16,13 @@ public abstract class Screen {
             Console.WriteLine();
         }
         Console.WriteLine("  A B C D E F G H");
+    }
+
+    public static PositionChess ReadPositionChess(){
+        var positionReaded = Console.ReadLine();
+        var column = positionReaded[0];
+        var line = int.Parse(positionReaded[1].ToString());
+        return new PositionChess(column, line);
     }
 
     private static void PrintPiece(Piece piece){

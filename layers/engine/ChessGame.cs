@@ -7,13 +7,16 @@ namespace Chess.layers.engine;
 public class ChessGame{
     private int Turn = 0;
     private Color CurrentPlayer;
+    public bool EndGame{ get; private set; }
     public Chessboard Chessboard{ get; private set; }
+
 
     public ChessGame(){
         Chessboard = new Chessboard(8,8);
         Turn = 1;
         CurrentPlayer = Color.Black;
-        PutPieces();
+        EndGame = false;
+        PutInitialPieces();
     }
 
     public void ExecuteMovement(Position source, Position destination){
@@ -23,7 +26,7 @@ public class ChessGame{
         Chessboard.PutPiece(piece, destination);
     }
 
-    private void PutPieces(){
+    private void PutInitialPieces(){
         Chessboard.PutPiece(new Tower(Chessboard, Color.Black), new PositionChess('C',1).toPosition());
         Chessboard.PutPiece(new Tower(Chessboard, Color.Black), new PositionChess('C',2).toPosition());
         Chessboard.PutPiece(new Tower(Chessboard, Color.Black), new PositionChess('D',2).toPosition());

@@ -28,14 +28,24 @@
         <value>Language selected: {0}</value>
     </data>
     <data name="ShowInfo" xml:space="preserve">
-        <value>#===================== CHESS =====================#
-
-  #================= INSTRUCTIONS ==================#
+        <value> #================= INSTRUCTIONS ==================#
 
   # 1. Select the piece you want to move.
   # 2. Select the destination.
   # 3. If the move is valid, the piece will be moved.
 
   #================= INSTRUCTIONS ==================#</value>
+    </data>
+    <data name="AlreadyPieceInPosition" xml:space="preserve">
+        <value>There is already a piece in this position!</value>
+    </data>
+    <data name="InvalidPosition" xml:space="preserve">
+        <value>Invalid position!</value>
+    </data>
+    <data name="Source" xml:space="preserve">
+        <value>Source</value>
+    </data>
+    <data name="Destination" xml:space="preserve">
+        <value>Destination</value>
     </data>
 </root>

@@ -13,7 +13,7 @@ public class Chessboard(int lines, int columns) {
         return Piece(position) is not null;
     }
     public void PutPiece(Piece piece, Position position) {
-        if (PiecesExists(position)) throw new ChessboardException("There is already a piece in this position!");
+        if (PiecesExists(position)) throw new ChessboardException(Resources.Translate_Culture.AlreadyPieceInPosition);
         pieces[position.line, position.column] = piece;
         piece.Position = position;
     }
@@ -27,6 +27,6 @@ public class Chessboard(int lines, int columns) {
     private bool IsValidPosition(Position position) => position.line >= 0 && position.line < lines &&
                                                        position.column >= 0 && position.column < columns;
     private void ValidatePosition(Position position){
-        if (!IsValidPosition(position)) throw new ChessboardException("Invalid position!");
+        if (!IsValidPosition(position)) throw new ChessboardException(Resources.Translate_Culture.InvalidPosition);
     }
 }

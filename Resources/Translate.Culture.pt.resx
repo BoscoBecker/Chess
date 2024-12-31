@@ -21,14 +21,24 @@
         <value>Linguagem selecionada: {0}</value>
     </data>
     <data name="ShowInfo" xml:space="preserve">
-        <value>#===================== XADREZ =====================#
-
-#================== INSTRUÇÕES ====================#
+        <value>#================== INSTRUÇÕES ====================#
 
   # 1.Seleciona a peça que deseja mover.
   # 2.Seleciona o destino.
   # 3.Se o movimento for váldo a peça será movida.
 
 #=================== INSTRUÇÕES  ===================#</value>
+    </data>
+    <data name="AlreadyPieceInPosition" xml:space="preserve">
+        <value>Já existe uma peça nessa posição!</value>
+    </data>
+    <data name="InvalidPosition" xml:space="preserve">
+        <value>Posição inválida!</value>
+    </data>
+    <data name="Source" xml:space="preserve">
+        <value>Origem</value>
+    </data>
+    <data name="Destination" xml:space="preserve">
+        <value>Destino</value>
     </data>
 </root>

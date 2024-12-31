@@ -60,6 +60,33 @@ namespace Chess.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to There is already a piece in this position!.
+        /// </summary>
+        internal static string AlreadyPieceInPosition {
+            get {
+                return ResourceManager.GetString("AlreadyPieceInPosition", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Destination.
+        /// </summary>
+        internal static string Destination {
+            get {
+                return ResourceManager.GetString("Destination", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invalid position!.
+        /// </summary>
+        internal static string InvalidPosition {
+            get {
+                return ResourceManager.GetString("InvalidPosition", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to K.
         /// </summary>
         internal static string King {
@@ -78,9 +105,7 @@ namespace Chess.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to #===================== CHESS =====================#
-        ///
-        ///  #================= INSTRUCTIONS ==================#
+        ///   Looks up a localized string similar to  #================= INSTRUCTIONS ==================#
         ///
         ///  # 1. Select the piece you want to move.
         ///  # 2. Select the destination.
@@ -91,6 +116,15 @@ namespace Chess.Resources {
         internal static string ShowInfo {
             get {
                 return ResourceManager.GetString("ShowInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Source.
+        /// </summary>
+        internal static string Source {
+            get {
+                return ResourceManager.GetString("Source", resourceCulture);
             }
         }
         
